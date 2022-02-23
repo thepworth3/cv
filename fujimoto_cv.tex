@@ -1,0 +1,552 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% "ModernCV" CV and Cover Letter
+% LaTeX Template
+% Version 1.3 (29/10/16)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Xavier Danaux (xdanaux@gmail.com) with modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+% Important note:
+% This template requires the moderncv.cls and .sty files to be in the same 
+% directory as this .tex file. These files provide the resume style and themes 
+% used for structuring the document.
+%
+% \cventry{years}{degree/job title}{institution/employer}{localization}{grade}{description}
+% http://theprofessorisin.com/2016/08/19/dr-karens-rules-of-the-academic-cv/
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt,roman]{moderncv} % Font sizes: 10, 11, or 12; paper sizes: a4paper, letterpaper, a5paper, legalpaper, executivepaper or landscape; font families: sans or roman
+
+\moderncvstyle{academic} % CV theme - options include: 'academic', 'casual' (default), 'classic', 'oldstyle' and 'banking'
+\moderncvcolor{black} % CV color - options include: 'blue' (default), 'orange', 'green', 'red', 'purple', 'grey' and 'black'
+
+\usepackage[scale=0.75]{geometry} % Reduce document margins
+\usepackage{xhfill}
+%\setlength{\hintscolumnwidth}{3cm} % Uncomment to change the width of the dates column
+\setlength{\makecvtitlenamewidth}{10cm} % For the 'classic' style, uncomment to adjust the width of the space allocated to your name
+
+%----------------------------------------------------------------------------------------
+%	NAME AND CONTACT INFORMATION SECTION
+%----------------------------------------------------------------------------------------
+
+\firstname{Derek} % Your first name
+\familyname{Fujimoto} % Your last name
+
+% All information in this block is optional, comment out any lines you don't need
+\title{Curriculum Vitae}
+\department{Physical Sciences Division}
+\institution{TRIUMF}
+\address{4004 Wesbrook Mall}{Vancouver, BC, V6T 2A3}
+\mobile{778 873 0054}
+\email{dfujimoto@triumf.ca}
+%\extrainfo{additional information}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	COVER LETTER
+%----------------------------------------------------------------------------------------
+
+% To remove the cover letter, comment out this entire block
+
+%\clearpage
+
+%\recipient{HR Department}{Corporation\\123 Pleasant Lane\\12345 City, State} % Letter recipient
+%\date{\today} % Letter date
+%\opening{Dear Sir or Madam,} % Opening greeting
+%\closing{Sincerely yours,} % Closing phrase
+%\enclosure[Attached]{curriculum vit\ae{}} % List of enclosed documents
+
+%\makelettertitle % Print letter title
+
+%\lipsum[1-2] % Dummy text
+%\lipsum[4] % Dummy text
+
+%\makeletterclosing % Print letter signature
+
+%\newpage
+
+%----------------------------------------------------------------------------------------
+%	CURRICULUM VITAE
+%----------------------------------------------------------------------------------------
+
+\makecvtitle % Print the CV title
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Education}
+
+\cvdoubleitem{2021}{University of British Columbia}{}{Ph.D. (Physics)}
+
+\cvdoubleitem{2015}{University of British Columbia}{}{M.Sc. (Physics)}
+
+\cvdoubleitem{2013}{McGill University}{}{B.Sc. (Physics)}
+
+%----------------------------------------------------------------------------------------
+%	EMPLOYMENT SECTION
+%----------------------------------------------------------------------------------------
+
+\section{professional Employment}
+
+\cvjob[year=2021--,
+	   position=Postdoctoral Researcher,
+	   department=Physical Sciences Division,
+	   company=TRIUMF]{}
+
+%----------------------------------------------------------------------------------------
+%	AWARDS SECTION
+%----------------------------------------------------------------------------------------
+\section{AWARDS}
+\cventry{2017}{\mdseries Killam Graduate Teaching Assistant Award}{}{}{}{}
+\cventry{2015}{\mdseries Stuart Blussom Quantum Matter Institute QuEST Fellowship}{}{}{}{}
+
+%----------------------------------------------------------------------------------------
+%	PUBLICATIONS SECTION
+%----------------------------------------------------------------------------------------
+\section{Refereed PUBLICATIONS}
+
+
+\cvpub[authors={\underline{D. Fujimoto}},
+       title={bfit: A Python Application For Beta-Detected NMR},
+       journal=J. Open Source Softw.,
+       year=2021,
+       volume=6, 
+       issue=65,
+       doi=10.21105/joss.03598]{}
+
+\cvpub[authors={\underline{D. Fujimoto}, W. A. MacFarlane, J. Rottler},
+       title=Energy barriers and cooperative motion at the surface of freestanding glassy polystyrene films,
+       journal=J. Chem. Phys.,
+       volume=153,
+       issue=15,
+       pages=154901,
+       year=2020,
+       doi=10.1063/5.0022958]{}
+
+\cvpub[authors={\underline{D. Fujimoto}, R. M. L. McFadden, \emph{et al}},
+       title=The dynamics of liquid 1-ethyl-3-methylimidazolium acetate measured with implanted-ion $^8$Li $\beta$-NMR,
+       journal=Chem. Mat.,
+       volume=31,
+       issue=22,
+       pages=9346--9353,
+       year=2019,
+       note=16 authors,
+       doi=10.1021/acs.chemmater.9b02864]{}
+
+\cvpub[authors={\underline{D. Fujimoto}, C. Hearty},
+       title=Characterization of the aging and excess noise of a Hamamatsu fine mesh photopentode.,
+       journal={Nucl. Instrum. Methods Phys. Res. Sect. A},
+       volume=823,
+       pages=149--155,
+       year=2016,
+       doi=10.1016/j.nima.2016.04.015]{}
+
+\cvpub[authors={I. McKenzie, \underline{D. Fujimoto}, \emph{et al}},
+       title={A $\beta$-NMR study of the depth, temperature, and molecular-weight dependence of secondary dynamics in polystyrene: Entropy--enthalpy compensation and dynamic gradients near the free surface},
+       journal=J. Chem. Phys.,
+       year=2022,
+       doi=10.1063/5.0081185,
+       note=12 authors]{}
+
+\cvpub[authors={V. L. Karner, A. Chatzichristos, D. L. Cortie, \underline{D. Fujimoto}, \emph{et al}},
+       title=Evolution of the metallic state in LaNiO$_3$/LaAlO$_3$ superlattices measured by $^8$Li $\beta$-detected NMR,
+       journal=Phys. Rev. B,
+       year=2021,
+       doi=10.1103/PhysRevB.104.205114,
+       note=16 authors]{}
+       
+\cvpub[authors={R. M. L. McFadden, A. Chatzichristos, D. L. Cortie, \underline{D. Fujimoto}, \emph{et al}},
+       title=Local electronic and magnetic properties of the doped topological insulators Bi$_2$Se$_3$:Ca and Bi$_2$Te$_3$:Mn investigated using ion-implanted $^8$Li $\beta$-NMR,
+       journal=Phys. Rev. B,
+       volume=102,
+       pages=235206,
+       year=2020,
+       doi=10.1103/PhysRevB.102.235206,
+       note=16 authors]{}
+      
+\cvpub[authors={J. O. Ticknor, I. Umegaki, R. M. L. McFadden, V. L. Karner, A. Chatzichristos, \underline{D. Fujimoto}, \emph{et al}},
+       title=Investigation of Ionic and Anomalous Magnetic Behavior in CrSe$_2$ Using $^8$Li $\beta$-NMR,
+       journal=RSC Adv.,
+       volume=10,
+       pages=8190--8197,
+       year=2020,
+       doi=10.1039/C9RA07065F,
+       note=15 authors]{}
+
+\cvpub[authors={R. M. L. McFadden, A. Chatzichristos, K.H. Chow, D. L. Cortie, M.H. Dehn, \underline{Derek Fujimoto}, \emph{et al}},
+       title=Ionic and electronic properties of the topological insulator Bi$_2$Te$_2$Se investigated via $\beta$-detected nuclear magnetic relaxation and resonance of $^8$Li,
+       journal=Phys. Rev. B,
+       volume=99,
+       pages=125201,
+       year=2019,
+       doi=10.1103/PhysRevB.99.125201,
+       note=19 authors]{}
+
+\cvpub[authors={V. L. Karner, A. Chatzichristos, D. L. Cortie, M. H. Dehn, O. Foyevtsov, K. Foyevtsova, \underline{D. Fujimoto}, \emph{et al}},
+       title=Local Metallic and Structural Properties of the Strongly Correlated Metal LaNiO$_3$ using $^8$Li $\beta$-NMR,
+       journal=Phys. Rev. B,
+       volume=100,
+       pages=165109,
+       year=2019,
+       issue=16,
+       doi=10.1103/PhysRevB.100.165109,
+       note=22 authors]{}
+
+\cvpub[authors={A. Chatzichristos, R. M. L. McFadden, M. H. Dehn, S. R. Dunsiger, \underline{D. Fujimoto}, \emph{et al}},
+       title=Bi-Arrhenius diffusion and surface trapping of $^8$Li$^+$ in rutile TiO$_2$,
+       journal=Phys. Rev. Lett.,
+       volume=123,
+       pages=095901,
+       year=2019,
+       issue=9,
+       doi=10.1103/PhysRevLett.123.095901,
+       note=15 authors]{}
+
+\cvpub[authors={D. M. Szunyogh, R. M. L. McFadden, V. L. Karner, A. Chatzichristos, T. Day Goodacre, M. H. Dehn, L. Formenti, \underline{D. Fujimoto}, \emph{et al}},
+       title=Direct observation of Mg$^{2+}$ complexes in ionic liquid solutions by $^{31}$Mg $\beta$-NMR spectroscopy,
+       journal=Dalt. Trans.,
+       volume=47,
+       issue=41,
+       doi=10.1039/C8DT02350F,
+       pages=14431--14435,
+       year=2018,
+       note=26 authors]{}
+
+\cvpub[authors={I. Mckenzie, Y. Chai, D. L. Cortie, J. A. Forrest, \underline{D. Fujimoto}, \emph{et al}},
+       title={Direct measurements of the temperature, depth and processing dependence of phenyl ring dynamics in polystyrene thin films by $\beta$-detected NMR},
+       journal=Soft Matter,
+       volume=14,
+       issue=36,
+       doi=10.1039/c8sm00812d,
+       pages=7291--7544,
+       year=2018,
+       note=13 authors]{}
+
+%----------------------------------------------------------------------------------------
+%	MANUSCRIPTS SECTION
+%----------------------------------------------------------------------------------------
+\section{MANUSCRIPTS in preparation}
+
+\cvpub[authors={J. Adelman, \underline{D. Fujimoto}, \emph{et al}},
+       title={Ion Implanted $\beta$-detected Nuclear Magnetic Resonance of $^8$Li in ZnO},
+       journal=Unpublished (Phys. Rev. B),
+       year=in press,
+       note=18 authors]{}
+
+\cvpub[authors={Y. Komatsu, R. Shimizu, R. Sato, M. Wilde, K. Nishio, T. Katase, D. Matsumura, H Saitoh, M. Miyauchi, J. R. Adelman, R. M. L. McFadden, \underline{D. Fujimoto}, \emph{et al}},
+       title={Repeatable photoinduced insulator-to-metal transition in yttrium oxyhydride epitaxial thin films},
+       journal=Unpublished (Science Advances),
+       year=in press,
+       note=21 authors]{}
+      
+\cvpub[authors={R. M. L. McFadden, D. Szunyogh, N. Bravo-Frank, A. Chatzichristos, M. H. Dehn, \underline{D. Fujimoto}, \emph{et al}},
+       title=Mg$^{\mathrm{II}}$ binding to adenosine triphosphate in 1-ethyl-3-methylimidazolium acetate
+characterized by $^{31}$P NMR and $^{31}$Mg $\beta$-detected NMR,
+       journal=Unpublished,
+       year=in press,
+       note=25 authors]{}
+       
+%-------------------------------------------------------------------------------
+%	CONFERENCES SECTION
+%-------------------------------------------------------------------------------
+\section{CONFERENCE PRESENTATIONS}
+
+\cvconf[year=2020, 
+	   title=Ionic liquid dynamics measured with implanted-ion $\beta$-NMR, 
+	   conference=American Physical Society March Meeting (virtual session), 
+	   style=Oral]{}
+\cvconf[year=2020, 
+	   title=Surface and bulk dynamics of compressed polystyrene films: A $\beta$-NMR study, 
+	   conference=American Physical Society March Meeting (COVID cancelled), 
+	   style=Poster]{}
+\cvconf[year=2018, 
+	   title=Molecular Dynamics of Polystyrene Films: Comparison Between Atomistic Simulations and beta-NMR Measurements, 
+	   conference=American Physical Society March Meeting, 
+	   style=Oral]{}	   
+\cvconf[year=2017, 
+	   title=$\beta$NMR studies of Enhanced Dynamics in Polymer Thin Films, 
+	   conference={The 14th International Conference on Muon Spin Rotation, Relaxation and Resonance}, 
+	   style=Oral]{}
+\cvconf[year=2015, 
+	   title=Hamamatsu Photopentode Excess Noise Factor, 
+	   conference=The 21st Belle II General Meeting, 
+	   style=Oral]{}
+\cvconf[year=2015, 
+	   title=A Belle II Custom Photomultiplier Tube,
+	   conference=16th Annual Meeting of the APS Northwest Section, 
+	   style=Oral]{}
+	   
+%----------------------------------------------------------------------------------------
+%	EXPERIMENTS SECTION
+%----------------------------------------------------------------------------------------
+\section{experiments}
+
+\cvpub[authors={\underline{D. Fujimoto}, W. A. MacFarlane},
+       title=Interfacial dynamics of ionic liquids and glasses measured with $\beta$-NMR,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M2072,
+       year=2020--]{}
+
+\cvpub[authors={\underline{D. Fujimoto}, R.F. Kiefl, W. A. MacFarlane},
+       title=Depth-resolved dynamics in polymer thin films near the glass transition using $\beta$NMR,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1892,
+       url=https://mis.triumf.ca/science/experiment/view/M1892,
+       year=2019--]{}
+
+\cvpub[authors={\underline{D. Fujimoto}, G. L. W. Cross, W. A. MacFarlane},
+       title=The modification of polymer dynamics by plastic deformation studied by $^8$Li $\beta$NMR,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1760,
+       url=https://mis.triumf.ca/science/experiment/view/M1760,
+       year=2018--]{}
+
+\cvpub[authors={M. Stachura},
+       title= $\beta$-NMR spectroscopy to explore the coordination chemistry of different Ac-based novel chelators and radiopharmaceuticals,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=L131,
+       url=https://mis.triumf.ca/science/experiment/view/L131,
+       year=2021--]{}
+
+\cvpub[authors={J. O. Ticknor, W. A. MacFarlane},
+       title= Exploration of dilute-limit lithium diffusion in anion substituted molybdenum disulfide using $\beta$-NMR,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M2101,
+       url=https://mis.triumf.ca/science/experiment/view/M2101,
+       year=2021--]{}
+
+\cvpub[authors={J. O. Ticknor, W. A. MacFarlane},
+       title= $^8$Li studies of Li$^+$ ionic mobility in entropy stabilized oxides,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M2100,
+       url=https://mis.triumf.ca/science/experiment/view/M2100,
+       year=2021--]{}
+
+\cvpub[authors={V. L. Karner, W. A. MacFarlane},
+       title=$\beta$-NMR investigation of the magnetism in La$_2$CuO$_4$/LaNiO$_3$ superlattices,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M2078,
+       url=https://mis.triumf.ca/science/experiment/view/M2078,
+       year=2020--]{}
+       
+\cvpub[authors={I. McKenzie, J. A. Forrest},
+       title=Calibrating $^8$Li$_+$ implantation profiles in polystyrene and studying secondary dynamics in ultra-thin polystyrene films,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M2038,
+       url=https://mis.triumf.ca/science/experiment/view/M2038,
+       year=2020--]{}       
+       
+\cvpub[authors={C. D. P. Levy, M. Stachura},
+       title=Using $\beta$-NMR spectroscopy to explore the coordination chemistry of different Ac-based novel chelators and radiopharmaceuticals,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1960,
+       url=https://mis.triumf.ca/science/experiment/view/M1960,
+       year=2019--]{}
+
+\cvpub[authors={J.A. Forrest, I. McKenzie},
+       title=Transformation of ultrastable polymer glasses,
+       issue=Active,
+       journal=TRIUMF Experiment,
+       volume=M1945,
+       url=https://mis.triumf.ca/science/experiment/view/M1945,
+       year=2019--]{}
+
+%\cvpub[authors={J.A. Forrest, I. McKenzie},
+%       title={Depth, temperature and molecular weight dependence of dynamics in polystyrene thin films},
+%       issue=Active,
+%       journal=TRIUMF Experiment,
+%       url=https://mis.triumf.ca/science/experiment/view/M1939,
+%       volume=M1939,
+%       year=2019--]{}
+
+\cvpub[authors={M. H. Dehn, R. F. Kiefl},
+       title=Strain-induced ferroelectricity in SrTiO$_3$ thin films,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1871,
+       url=https://mis.triumf.ca/science/experiment/view/M1871,
+       year=2018--]{}
+
+\cvpub[authors=I. McKenzie,
+       title=Local dynamics of polystyrene probed by $\mu$SR,
+       journal=TRIUMF Experiment,
+       issue=Closed,
+       volume=M1841,
+       url=https://mis.triumf.ca/science/experiment/view/M1841,
+       year=2018--19]{}
+
+\cvpub[authors={R. M. L. McFadden, H. Nakamura, W. A. MacFarlane},
+       title={$^8$Li betaNMR study of the Inverse Perovskite Oxide Topological Dirac Semimetals},
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1822,
+       url=https://mis.triumf.ca/science/experiment/view/M1822,
+       year=2018--]{}
+
+\cvpub[authors={V. L. Karner, U. Niemann, W. A. MacFarlane},
+       title=$^8$Li $\beta$NMR study of the origin of the heavy fermions in epitaxial films of LiV$_2$O$_4$,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1821,
+       url=https://mis.triumf.ca/science/experiment/view/M1821,
+       year=2018--]{}
+
+\cvpub[authors={R. M. L. McFadden, W. A. MacFarlane},
+       title=$\beta$-NMR studies of lithium-ion mobility in tunnel structured materials,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1771,
+       url=https://mis.triumf.ca/science/experiment/view/M1771,
+       year=2017--]{}
+
+\cvpub[authors={R. M. L. McFadden, W. A. MacFarlane},
+       title=Polaronic effects in titanates studied with $\beta$-NMR,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1770,
+       url=https://mis.triumf.ca/science/experiment/view/M1770,
+       year=2017--]{}
+
+\cvpub[authors={R. M. L. McFadden, I. Umegaki, J. Sugiyama, W. A. MacFarlane},
+       title=$\beta$-NMR studies of dilute-limit lithium diffusion in van der Waals layered solids,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1743,
+       url=https://mis.triumf.ca/science/experiment/view/M1743,
+       year=2017--]{}
+
+\cvpub[authors={M. H. Dehn, R. F. Kiefl},
+       title=Magneto electric effects in Cr$_2$O$_3$,
+       journal=TRIUMF Experiment,
+       issue=Closed,
+       volume=M1614,
+       url=https://mis.triumf.ca/science/experiment/view/M1614,
+       year=2016--18]{}
+       
+\cvpub[authors={J. Sugiyama},
+       title=Li distribution in the interface between electrode and electrolyte,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1490,
+       url=https://mis.triumf.ca/science/experiment/view/M1490,
+       year=2015--]{}
+       
+\cvpub[authors={V.L. Karner, D. Cortie, W. A. MacFarlane},
+       title=$^8$Li betaNMR Studies of the Metallic State of Strongly Correlated Transition Metal Oxides,
+       journal=TRIUMF Experiment,
+       issue=Active,
+       volume=M1426,
+       url=https://mis.triumf.ca/science/experiment/view/M1426,
+       year=2015--]{}
+       
+\cvpub[authors=I. McKenzie,
+       title=Depth-resolved measurements of dynamics in polymer thin films using spin-polarized radioactive probes,
+       journal=TRIUMF Experiment,
+       issue=Closed,
+       volume=M1354,
+       url=https://mis.triumf.ca/science/experiment/view/M1354,
+       year=2015--18]{}
+
+\cvpub[authors=W. A. MacFarlane,
+       title=$\beta$-NMR studies of the surface states of topological insulators,
+       journal=TRIUMF Experiment,
+       issue=Closed,
+       volume=M1306,
+       url=https://mis.triumf.ca/science/experiment/view/M1306,
+       year=2016]{}
+
+
+
+%-------------------------------------------------------------------------------
+%	TEACHING SECTION
+%-------------------------------------------------------------------------------
+\section{TEACHING}
+
+\cvdoubleitem{2019}{Instructor}{}{Enriched Experimental Physics}{}{}{}
+\cvdoubleitem{2016--18}{Instructor}{}{Enriched Physics I Laboratory}{}{}{}
+\cvdoubleitem{2016--17}{Instructor}{}{Experimental Physics Lab}{}{}{}
+
+\cvdoubleitem{2015, 19}{Head Teaching Assistant}{}{Enriched Experimental Physics}{}{}{}
+\cvdoubleitem{2014--18}{Head Teaching Assistant}{}{Enriched Physics I Laboratory}{}{}{}
+\cvdoubleitem{2016--18}{Head Teaching Assistant}{}{Experimental Physics Lab}{}{}{}
+
+\cvdoubleitem{2014--15, 19}{Teaching Assistant}{}{Enriched Experimental Physics}{}{}{}
+\cvdoubleitem{2013--18}{Teaching Assistant}{}{Enriched Physics I Laboratory}{}{}{}
+\cvdoubleitem{2016--17}{Teaching Assistant}{}{Experimental Physics Lab}{}{}{}
+
+
+%-------------------------------------------------------------------------------
+%	COMPLEMENTARY EDUCATION SECTION
+%-------------------------------------------------------------------------------
+\section{COMPLEMENTARY EDUCATION}
+\cventry{2022}{Advanced Radiation Protection Training (Nuclear Energy Worker)}{}{}{}{TRIUMF}
+\cventry{2018}{Instructional Skills Workshop}{}{}{}{UBC Centre for Teaching, Learning, and Technology}
+\cventry{2014, 17--18}{Creating Inclusive Classrooms}{}{}{}{UBC Centre for Teaching, Learning, and Technology}
+\cventry{2013}{TA Professional Development Workshop}{}{}{}{UBC Department of Physics and Astronomy}
+
+%-------------------------------------------------------------------------------
+%	UNIVERSITY SERVICE SECTION
+%-------------------------------------------------------------------------------
+\section{University service}
+\cventry{2022}{WNPPC Student Presentation Judge}{}{}{}{}
+\cventry{2018}{Graduate Course Load Review Committee}{}{}{}{}
+
+%-------------------------------------------------------------------------------
+%	RELATED WORK SECTION
+%-------------------------------------------------------------------------------
+\section{related work}
+\cventry{Software}{\mdseries$\beta$-NMR and $\beta$-NQR data fitting and visualization GUI and API}{}{}{}{\url{https://pypi.org/project/bfit/}}
+\cventry{Software}{\mdseries Muon data (MUD) file reader and asymmetry calculator for $\beta$-NMR and $\beta$-NQR at TRIUMF}{}{}{}{\url{https://pypi.org/project/bdata/}}
+\cventry{Software}{\mdseries Muon data (MUD) file reader for $\mu$SR at TRIUMF}{}{}{}{\url{https://pypi.org/project/mud-py/}}
+\cventry{Software}{\mdseries GUI for the viewing and comparison of CCD images taken for the $\beta$-NMR and $\beta$-NQR experiments at TRIUMF}{}{}{}{\url{https://pypi.org/project/bccd/}}
+\cventry{Software}{\mdseries A simple python GUI for extracting data from images of figures}{}{}{}{\url{https://pypi.org/project/rigur/}}
+\cventry{Experiment}{\mdseries $\beta$-NMR spectrometer high-temperature upgrade}{}{}{}{}
+\cventry{Software}{\mdseries Microsoft spreadsheet plagiarism checker}{}{}{}{\url{https://pypi.org/project/compsheet/}}
+
+%-------------------------------------------------------------------------------
+%	SKILLS SECTION
+%-------------------------------------------------------------------------------
+\section{SKILLS}
+\cventry{Languages}{\mdseries English (native), French (good)}{}{}{}{Python (current), \LaTeX (current), Julia (current), Cython (current), MATLAB (excellent), ROOT (excellent), C++ (good), BASH (good), C (familiar).}
+
+\cventry{Experimental}{\mdseries $\beta$-NMR, $\beta$-NQR, logic circuits, photomultiplier tubes, calorimetry, UHV systems, experiment design, equipment design, clean room operation}{}{}{}{}
+\cventry{Computational}{\mdseries Molecular dynamics, LAMMPS, Monte-Carlo, Gaussian DFT, scientific computing, curve fitting, data processing, Tkinter}{}{}{}{}
+\cventry{Teaching}{\mdseries Learner-centered teaching, inquiry-based teaching, Socratic questioning, course and rubric design, learning goals, creating inclusive classrooms, design of instructor training}{}{}{}{}
+\cventry{Soft Skills}{\mdseries Leadership, organization, communication, presentations}{}{}{}{}
+
+
+%\cventry{}{}{}{}{}{}{}
+
+%\renewcommand{\listitemsymbol}{-~} % Changes the symbol used for lists
+
+%\cvlistdoubleitem{Piano}{Chess}
+%\cvlistdoubleitem{Cooking}{Dancing}
+%\cvlistitem{Running}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
