@@ -1,4 +1,4 @@
-[See CV PDF here](https://github.com/dfujim/cv/blob/315e504dfec8c688ab7eb1d320b4cf80df657df8/fujimoto_cv.pdf).
+[See CV PDF here](https://github.com/dfujim/cv/blob/master/fujimoto_cv.pdf).
 
 
 Original code credits:
