@@ -23,19 +23,20 @@ links = [link for link in links if 'science/experiment/view' in link]
 links = [link for link in links if link.split('/')[-1][0] == 'M' and len(link.split('/')[-1])>4]
 
 # look for me
-for link in tqdm(links): 
+for link in tqdm(links):
 
     # open page
     url = f'https://mis.triumf.ca{link}'
     res = requests.get(url)
     soup = BeautifulSoup(res.content, 'html.parser')
-    text = soup.find_all(id='expNum')
 
     # get exp number
     exp_num = link.split('/')[-1]
 
     # get status
-    status = list(text[0].children)[-2].contents[0].split()[-1]
+    line = [l for l in soup.text.split('\n') if exp_num in l]
+    status = line[0].split(' ')[-1]
+    # status = list(text[0].children)[-2].contents[0].split()[-1]
 
     # get names
     try:
@@ -44,14 +45,14 @@ for link in tqdm(links):
     except AttributeError:
         tqdm.write(f'Error spokes: {exp_num}')
         continue
-        
+
     try:
         toplist = soup.find(id='members').text.split('\n')
-        members = [lst for lst in toplist if lst][4::3]
+        members = [lst for lst in toplist if lst]
     except AttributeError:
         tqdm.write(f'Error members: {exp_num}')
         continue
-    
+
     # print results
     if target_name in spokes:
         tqdm.write(f'Spokesperson {exp_num} {status}')
