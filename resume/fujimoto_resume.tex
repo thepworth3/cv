@@ -1,0 +1,226 @@
+% a mashup of hipstercv, friggeri and twenty cv
+% https://www.latextemplates.com/template/twenty-seconds-resumecv
+% https://www.latextemplates.com/template/friggeri-resume-cv
+
+\documentclass[lighthipster]{simplehipstercv}
+% available options are: darkhipster, lighthipster, pastel, allblack, grey, verylight, withoutsidebar
+% withoutsidebar
+\usepackage[utf8]{inputenc}
+\usepackage[default]{raleway}
+\usepackage[margin=0.75cm, a4paper]{geometry}
+\usepackage{academicons}
+\usepackage{here}
+\usepackage{enumitem}	             % \begin{itemize}[noitemsep]
+\usepackage{lipsum}
+
+
+%------------------------------------------------------------------ Variables
+
+\newlength{\rightcolwidth}
+\newlength{\leftcolwidth}
+\setlength{\leftcolwidth}{0.23\textwidth}
+\setlength{\rightcolwidth}{0.75\textwidth}
+
+%------------------------------------------------------------------
+\pagestyle{empty}
+\begin{document}
+\thispagestyle{empty}
+%-------------------------------------------------------------
+\simpleheader{headercolour}{Derek}{Fujimoto}{Postdoctoral Researcher in Physics}{white}
+
+%------------------------------------------------
+% this has to be here so the paracols starts..
+\subsection*{}
+
+\vspace{5.38em}
+
+\setlength{\columnsep}{1.5cm}
+\columnratio{0.23}[0.75]
+\begin{paracol}{2}
+\hbadness5000
+%\backgroundcolor{c[1]}[rgb]{1,1,0.8} % cream yellow for column-1 %\backgroundcolor{g}[rgb]{0.8,1,1} % \backgroundcolor{l}[rgb]{0,0,0.7} % dark blue for left margin
+
+\paracolbackgroundoptions
+
+% 0.9,0.9,0.9 -- 0.8,0.8,0.8
+
+\footnotesize
+{\setasidefontcolour
+% \flushright
+\roundpic{test_profile.jpg}
+
+\hfill\bg{cvgreen}{white}{About me}\\[0.5em]
+
+{\footnotesize
+As an experienced and methodical researcher, I've always been passionate about learning new things. Although I'm currently a part of a multinational particle \\physics collaboration, in my graduate studies I used $\beta$-NMR and large-scale simulations to understand the motion of molecules in glass forming materials. I've published papers in journals attributed to particle physics, physical chemistry, condensed matter, and software. As a result, I have developed a very broad background and skill set, and am effective both in the lab and analyzing data. I enjoy working as a part of a team, both as mentor and mentee, but am very independent and self-motivated.\\
+
+More project-related stuff here
+\lipsum[110]
+}
+\bigskip
+
+\hfill\bg{cvgreen}{white}{Languages} \\
+
+\vspace{-0.3cm}
+\flushright
+{
+    English ~•~ French
+
+    \bigskip
+
+    Python ~•~ Cython ~•~ Julia ~•~ C++ \\ MATLAB ~•~ BASH ~•~ ROOT \\ \LaTeX
+}
+
+
+
+% \begin{tabular}{r | r}
+% {\phantom{x}\footnotesize mother tongue} & \textbf{English} \\
+% \pictofraction{\faCircle}{black!30}{2}{cvgreen}{2}{\tiny} & \textbf{French}  \\
+% \pictocolor{\faCircle}{cvgreen}{4}{\tiny}& \textbf{Python}  \\
+% \pictocolor{\faCircle}{cvgreen}{4}{\tiny}& \textbf{\LaTeX}  \\
+% \pictofraction{\faCircle}{black!30}{1}{cvgreen}{3}{\tiny}& \textbf{Julia}   \\
+% \pictofraction{\faCircle}{black!30}{1}{cvgreen}{3}{\tiny}& \textbf{Cython}  \\
+% \pictofraction{\faCircle}{black!30}{2}{cvgreen}{2}{\tiny}& \textbf{C++}     \\
+% \pictofraction{\faCircle}{black!30}{2}{cvgreen}{2}{\tiny}& \textbf{MATLAB}  \\
+% \pictofraction{\faCircle}{black!30}{2}{cvgreen}{2}{\tiny}& \textbf{BASH}
+% \end{tabular}
+
+% \bigskip
+
+% \hfill\bg{cvgreen}{white}{Areas of specialization} \\[0.5em]
+
+% Physics ~•~ Mathematics ~•~ NMR \\ Programming ~•~ Magnetics  ~•~ Technical Writing ~•~ Data Analysis
+
+\bigskip
+
+% \hfill\bg{cvgreen}{white}{Project Highlights}\\[0.5em]
+% Magnetically shielded room commissioning ~•~ Ultra-high precision magnetic sensor characterization ~•~ nEDM systematic reduction ~•~ UHV cryostat redesign and assembly
+% \bigskip
+
+
+\vfill
+
+\vspace{-0.5cm}
+
+\infobubble{\faLinkedin}{cvgreen}{white}{LinkedIn}{https://www.linkedin.com/in/derek-fujimoto/}\\
+\infobubble{\faGithub}{cvgreen}{white}{Github}{https://github.com/}\\
+\infobubble{\aiGoogleScholar}{cvgreen}{white}{Scholar}{https://scholar.google.ca/citations?user=lQEubBkAAAAJ&hl=en&oi=ao}
+
+% \phantom{turn the page}
+
+% \phantom{turn the page}
+}
+%-----------------------------------------------------------
+\switchcolumn
+
+\vspace{0.4cm}
+\small
+
+% SUMMARY ===================================
+\section*{At a Glance}
+
+\begin{itemize}[noitemsep]
+    \item Ph.D. in Physics
+    \item Nearly 2 years as a Postdoctoral Researcher, supervising 7 undergraduate students
+    \item 8 years research experience on a wide array of topics
+    \item 27 academic publications
+    \item Strong programming, data analysis, experiment, and interpersonal skills
+\end{itemize}
+
+% RECENT EMPLOYMENT ===================================
+\section*{Recent Experience}
+
+\begin{tabular}{r| p{0.45\textwidth} c}
+    \cvevent{2021--}{Postdoctoral Researcher in Particle Physics}{TRIUMF}{Magnetic field characterization, measurement, and shielding for the ultra-cold neutron group. Hired and supervised students, designed and conducted experiments in a multinational collaboration. Oversaw commissioning of a \$2.5M magnetically shielded room.}{TRIUMF_Logo_Blue.pdf} \\
+%
+    \cvevent{2015--2021}{Graduate Research Assistant in Soft Matter}{University of British Columbia}{Designed and conducted beta-detected NMR experiments in ionic liquids and polymer glasses using a radioactive ion beam at TRIUMF. Wrote molecular dynamics simulations of polymer thin films on large high-performance computing clusters. }{sbqmi_logopng.png} \vspace{-0.3cm}
+\end{tabular}
+% \vspace{-1em}
+
+% EDUCATION ===================================
+\section*{Education}
+\begin{tabular}{r p{0.45\textwidth} c}
+    \cvdegree{2021}{Physics}{Ph.D.}{University of British Columbia}{}{ubc-logo-2018-narrowsig-blue282-pms.pdf}{width=3cm} \vspace{-0.2cm}\\
+    \cvdegree{2015}{Physics}{M.Sc.}{University of British Columbia}{}{ubc-logo-2018-narrowsig-blue282-pms.pdf}{width=3cm} \vspace{-0.2cm}\\
+    \cvdegree{2013}{Physics}{B.Sc.}{McGill University}{}{mcgill.jpg}{width=1.8cm}
+\end{tabular}
+
+\vspace{0.5em}
+
+\begin{minipage}[t]{0.37\textwidth}
+
+% PUBLICATIONS ===================================
+\section*{Academic Publications}
+Full academic CV \href{https://github.com/dfujim/cv/blob/master/fujimoto_cv.pdf}{here}.
+
+\begin{itemize}[noitemsep]
+    \item 18 peer reviewed publications (4 first author)
+    \item 9 conference proceedings (2 first author)
+    \item 7 presentations and 5 posters at international conferences and workshops
+\end{itemize}
+
+\bigskip
+\vspace{-2em}
+
+% OTHER EDUCATION ==================================
+\section*{Complementary Education}
+\begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.8\textwidth}}
+    2023 & Crane Operator Training \\
+    2022 & Advanced Radiation Protection Training\\
+    2018 & Instructional Skills Workshop\\
+    2014 & Laser Safety\\
+    2014 & Radioactive Calibration Sources
+\end{tabular}
+
+\bigskip
+
+\end{minipage}\hfill
+\begin{minipage}[t]{0.31\textwidth}
+
+    % AWARDS ==================================
+    \section*{Awards}
+    \begin{tabular}{>{\footnotesize\bfseries}r >{\footnotesize}p{0.8\textwidth}}
+        2017 & Killam Graduate Teaching Assistant Award\\
+        2015 & Stuart Blussom Quantum Matter Institute QuEST Fellowship
+    \end{tabular}
+
+    \bigskip
+
+    % SOFTWARE ===================================
+    \vspace{0.5cm}
+    \section*{Software Development}
+    \begin{tabular}{>{\footnotesize\bfseries}l >{\footnotesize}p{0.7\textwidth}}
+        \href{https://github.com/dfujim/bfit}{\faGithub~bfit} & General-purpose $\beta$-NMR analysis GUI and python API, now the definitive analysis program\\
+        \href{https://github.com/dfujim/bccd}{\faGithub~bccd} & $\beta$-NMR beamspot analysis GUI and python API\\
+        \href{https://github.com/dfujim/mudpy}{\faGithub~mudpy} & TRIUMF $\mu$SR file reader\\
+        \href{https://github.com/ucn-triumf/QZFM}{\faGithub~QZFM} & Unofficial QuSpin Python API: serial communication over USB
+    \end{tabular}
+\end{minipage}
+
+
+% SKILLS ===================================
+\vspace{-2em}
+\section*{Additional Skills}
+\begin{tabular}{>{\footnotesize\bfseries}l >{\footnotesize}p{0.55\textwidth}}
+    Science & UHV systems, clean room procedures, cryogenics, ion beams, Monte Carlo, signal processing, DAQ, technical writing, and general lab skills.\\
+    Engineering & Solidworks, 3D printing.\\
+    Programming & numpy, scipy, pandas, matplotlib, linux.\\
+    Leadership & Team management, performance assessment, project supervision.\\
+    Other Software & Git, Gaussian, LAMMPS, MS Word, MS Excel, VSCode, GIMP, Inkscape
+\end{tabular}
+
+
+\vspace{0.5cm}
+\vfill % Whitespace before final footer
+
+%----------------------------------------------------------------------------------------
+%	FINAL FOOTER
+%----------------------------------------------------------------------------------------
+\begin{center}\fontfamily{\sfdefault}\selectfont \color{black!70}
+{\small Derek Fujimoto \icon{\faMapMarker}{cvgreen}{} Vancouver, Canada \icon{\faPhone}{cvgreen}{} 778 873 0054 \icon{\faAt}{cvgreen}{} \href{mailto:dfujim@protonmail.com}{\color{black!70} dfujim@protonmail.com}
+\vspace{-0.1cm}
+}
+\end{center}
+\end{paracol}
+
+\end{document}
