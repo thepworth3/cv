@@ -1,4 +1,4 @@
-[See CV PDF here](https://github.com/thepworth3/cv/academic_cv/hepworth.pdf).
+[See CV PDF here](https://github.com/thepworth3/cv/blob/master/academic_cv/hepworth.pdf).
 
 
 Original code credits:
