@@ -1,4 +1,4 @@
-[See CV PDF here](https://github.com/dfujim/cv/blob/master/fujimoto_cv.pdf).
+[See CV PDF here](https://github.com/thepworth3/cv/academic_cv/hepworth.pdf).
 
 
 Original code credits:
